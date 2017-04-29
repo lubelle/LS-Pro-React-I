@@ -4,8 +4,10 @@ import './App.css';
 export default class Footer extends Component {
 	render(){
 		return (
-			<div className="App-footer">
-				LambdaSchool-Pro | React-I | lubelle
+			<div className="App-container">
+				<div className="App-footer">
+					LambdaSchool-Pro | React-I | lubelle
+				</div>
 			</div>
 		);
 	}
