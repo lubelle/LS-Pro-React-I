@@ -1,0 +1,16 @@
+.navbar{
+	height: 100px;
+	background-color: rgb(144,179,75);
+	text-align: right;
+}
+.nav_btn{
+	margin:30px 10px;
+	padding: 14px 40px;
+}
+.nav_btn:hover {
+    background-color: white;
+}
+.nav_btn a{
+	text-decoration: none;
+	color: green;
+}
