@@ -5,7 +5,15 @@
 img{
 	width:100%;
 }
-
+.flex-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.flex-item{
+	
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -28,21 +36,20 @@ img{
   height: 100%;
 }
 .App-blockquote {
-  height: 250px;
   font-size: 24px;
+  height: 180px;
   display: table-cell;
   vertical-align: middle;
-  text-align: center;  
+  text-align: center;
 }
 
 .App-footer {
-  height: 100px;
-  background-color: rgb(144,179,75);
   font-size: 16px;
+  height: 100px;
   display: table-cell;
   vertical-align: middle;
-  text-align: center;  
-  
+  text-align: center; 
+  background-color: rgb(144,179,75);  
 }
 
 @keyframes App-logo-spin {

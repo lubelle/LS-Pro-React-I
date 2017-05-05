@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from './NavBar';
 import Body from './Body';
-import Footer from './Footer';
 import './App.css';
 
 class App extends Component {
@@ -9,8 +8,7 @@ class App extends Component {
 		return (
 			<div>
 				<NavBar />
-				<Body />
-				<Footer />
+				<Body className="flex-container" />
 			</div>
 		);
 	}
