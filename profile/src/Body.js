@@ -156,6 +156,8 @@ class Body extends Component{
 	}
 	render(){
 		const wellStyles = {maxWidth: 600, margin: '0 auto 10px'};
+		const twitter_link = `https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text= 
+		${quotes[this.state.arrayIndex].quote} -- ${quotes[this.state.arrayIndex].author}`;
 		return (
 			<div className="flex-item">
 				<Jumbotron>
@@ -176,7 +178,7 @@ class Body extends Component{
 				<Button
 					bsStyle="info pull-right"
 					bsSize="large"
-					href="https://twitter.com/"
+					href={twitter_link}
 					target="_blank">
 					Twitter
 				</Button>
