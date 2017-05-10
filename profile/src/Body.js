@@ -156,8 +156,9 @@ class Body extends Component{
 	}
 	render(){
 		const wellStyles = {maxWidth: 600, margin: '0 auto 10px'};
-		const twitter_link = `https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text= 
-		${quotes[this.state.arrayIndex].quote} -- ${quotes[this.state.arrayIndex].author}`;
+		const twitter_quotes = encodeURIComponent('"' + quotes[this.state.arrayIndex].quote + '" ' + quotes[this.state.arrayIndex].author);
+		const twitter_link = `https://twitter.com/intent/tweet?hashtags=quotes&text=` + twitter_quotes;
+
 		return (
 			<div className="flex-item">
 				<Jumbotron>
